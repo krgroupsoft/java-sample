@@ -11,7 +11,7 @@ agent  any
      steps{
            echo 'testing..'
        }
-      
+      }
 
      stage ('deploy'){
       steps{
