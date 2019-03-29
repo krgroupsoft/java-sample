@@ -3,21 +3,21 @@ agent  any
  stages{
       stage ('build'){
          steps{
-         sh 'mvn compile'
+         sh 'make'
             echo 'building..'
           }
       }
 
       stage ('test'){
      steps{
-     sh'mvn test'
+     sh 'make check'
            echo 'testing..'
        }
       }
 
      stage ('deploy'){
       steps{
-      sh 'mvn deploy'
+      sh 'make publish'
         echo 'deploying..'
       }
      }
